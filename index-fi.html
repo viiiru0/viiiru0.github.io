@@ -12,9 +12,6 @@
     <header>
       <a href="index-fi.html"></a>
       <nav>
-        <label for="menu" tabindex="0">
-                    <i class="bi bi-list"></i>
-        </label>
         <ul>
           <li><a href="index-fi.html">Projekti suomeksi</a></li>
           <li><a href="index-sv.html">Projektet på svenska</a></li>
@@ -22,13 +19,62 @@
       </nav>
     </header>
 
+    <hr>
+
     <main>
-      <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+      <section>
+        <h1>Otsikko</h1>
+        <p>Jotain tekstiä ehkä joku esittely</p>
+      </section>
+      
       <section style="max-width: 1120px; margin: 0 auto; padding: 10px;">
         <section style="width: 100%; height: 630px; overflow: hidden; position: relative; border: 1px solid #ccc;">
           <iframe title="cloud_project" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiN2JmZDg4NDctM2QwMC00MzFiLWEzNGItYTBkMTEzY2NmMDQwIiwidCI6ImZiZDJmMDQ1LWIzNGMtNDY3My05NTM0LThmMjM3NDM1NWNlYyIsImMiOjh9&pageName=090d3efd42ead49d8c4a" allowFullScreen="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 690px; border: none;"></iframe>
         </section>
       </section>
+
+      <section>
+        <h2>Raportti</h2>
+        <p>Tähän selitystä raportista</p>
+      </section>
+
+      <section>
+        <section>
+          <h2>Projektin backend</h2>
+          <p>Jos haluat nähdä mitä projektin taakse kätkeytyy, kurkkaa klikkaamalla allaolevista painikkeista!</p>
+        </section>
+        <details class="buttons">
+          <summary>Tietokantakaavio</summary>
+          <p> <img src="cloud_diagram.png" alt="database-schema" class="database-schema"></p>
+        </details>
+        <details class="buttons">
+          <summary>Docker Compose</summary>
+          <div class="docker-content">
+            <pre>
+              <code class="yaml">
+  services:
+  mysql:
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+    container_name: cloud_services_db
+    image: mysql:8.4
+    volumes:
+      - mysql_volume:/var/lib/mysql
+    ports:
+      - 3306:3306
+    networks:
+      - mysql_network
+
+  volumes:
+    mysql_volume:
+
+  networks:
+    mysql_network:
+              </code>
+            </pre>
+          </div>
+        </details>
+      </section>  
   </main>
 
     <footer>
