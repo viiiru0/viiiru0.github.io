@@ -23,19 +23,50 @@
 
     <main>
       <section>
-        <h1>Otsikko</h1>
-        <p>Jotain tekstiä ehkä joku esittely</p>
+        <h1>Pilvipalveluiden käyttö yrityksissä, Suomi ja Ruotsi</h1>
+        <p>Tällä sivustolla esittelen data-analytiikan projektini. Datassa esitellään pilvipalveluiden yrityskäyttöä eri toimialoilla vuosien 2021–2025 välillä Suomessa ja Ruotsissa. Vertailu näiden kahden maan välillä on kiinnostavaa, koska Suomi ja Ruotsi ovat Euroopan kärkimaita pilvipalveluiden käytössä.</p>
+        <p>Analysoimani data on haettu Suomen Tilastokeskuksen avoimesta datasta sekä Ruotsin vastaavanlaiselta Statistikmyndigheten-sivustolta. Molemmat maat tuottavat kansalliset tilastonsa EU-standardien mukaan, joten maiden avoin data on keskenään jo valmiiksi yhdenmukaista ja vertailukelpoista. 
+          On oleellista täsmentää, että analyysissä ei ole mukana sellaisia kategorioita, joita toisen maan tilastoista ei löytynyt ollenkaan eivätkä täten olisi olleet täysin vertailukelpoisia. Kun raporttia lukee, on hyvä pitää mielessä, että kyseessä ei ole koko maan absoluuttinen pilvipalvelukäyttö joka ikisessä maan yrityksessä, vaan mukana on valitut toimialat ja valitut pilvipalvelutyypit, joista kerron alempana lisää.</p>
+        <p>Olen entiseltä koulutukseltani ruotsin kielen kääntäjä, joten projekti on toteutettu kaksikielisesti.</p>
       </section>
       
-      <section style="max-width: 1120px; margin: 0 auto; padding: 10px;">
-        <section style="width: 100%; height: 630px; overflow: hidden; position: relative; border: 1px solid #ccc;">
-          <iframe title="cloud_project" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiN2JmZDg4NDctM2QwMC00MzFiLWEzNGItYTBkMTEzY2NmMDQwIiwidCI6ImZiZDJmMDQ1LWIzNGMtNDY3My05NTM0LThmMjM3NDM1NWNlYyIsImMiOjh9&pageName=090d3efd42ead49d8c4a" allowFullScreen="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 690px; border: none;"></iframe>
-        </section>
+      <section style="max-width: 100%px; margin: 0; padding: 0px;">
+        <section style="width: 100%; height: 630px; overflow: hidden; position: relative; border: none">
+          <iframe title="cloud_project" src="https://app.powerbi.com/view?r=eyJrIjoiN2JmZDg4NDctM2QwMC00MzFiLWEzNGItYTBkMTEzY2NmMDQwIiwidCI6ImZiZDJmMDQ1LWIzNGMtNDY3My05NTM0LThmMjM3NDM1NWNlYyIsImMiOjh9&pageName=090d3efd42ead49d8c4a" allowFullScreen="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></iframe>
       </section>
 
       <section>
-        <h2>Raportti</h2>
-        <p>Tähän selitystä raportista</p>
+        <h2>Raportin otsikko</h2>
+        <p>1. Kuten raportista näkyy, Suomessa ja Ruotsissa merkittävän suuri osa yrityksistä käyttää jotakin pilvipalvelua. Vuonna 2023 Suomi ohitti Ruotsin ja on kasvattanut etumatkaa vielä sen jälkeenkin, ollen viime vuonna jopa 3,71 prosenttiyksikköä Ruotsia edellä kokonaiskäyttöasteessa.</p>
+        <p>2. Datasta ilmenee myös, että Suomen ja Ruotsin välillä on eroja pilvipalvelumallien (SaaS, PaaS, IaaS) yleisyydessä. Suomi johtaa SaaS-ratkaisuissa noin 6 prosenttiyksikköä, kun taas IaaS-ratkaisuissa Ruotsi johtaa Suomea lähes 10 prosenttiyksikköä. Tuo ero kertoo osaltaan Suomen ja Ruotsin välisestä yritysrakenteiden erosta.</p>
+        <p>3. Piirakkakaaviosta näemme yksityiskohtaisemmin, miten SaaS-palvelut ovat IaaS- ja PaaS- malleihin verrattuna huomattavasti laajemmassa käytössä Suomessa. On pohtimisen arvoista, pitäisikö Suomen pyrkiä samaan pilvikäyttöön kuin Ruotsissa, onhan kyseessä suurin kilpailijamme. Toisaalta voi miettiä onko Suomen yrityksillä edes tarvetta muuttaa pilvi-infrastruktuuriaan, jos nykyinen malli toimii. Tekoäly ja mahdolliset datakeskushankkeet voivat tietty muuttaa tilannetta Suomessakin.</p>
+        <p>4. Tarkastellessamme toimialakohtaista kaaviota näemme, että pilvipalveluiden käytössä johtavat toimialat ovat informaatio- ja viestintäala sekä teollisuusala. Informaatio- ja viestintäalalla tämä johtosija on sinänsä hyvin looginen, sillä ala ja työympäristöt ovat alkujaankin olleet digitaalisia, joten siirtymä pilveen on ollut luonnollisempaa. Myös teollisuusalalla pilvipalveluiden käytön kasvu on ollut merkittävää viime vuosina useisiin muihin toimialoihin verrattuna. Syynä lienee Teollisuus 4.0 sekä siihen liittyvät ilmiöt kuten Internet of Things.</p>
+      </section>
+
+      <section>
+        <details class="buttons">
+          <summary>Datan kategoriat</summary>
+          <p>Tarkempaa tietoa datan rajauksesta:</p>
+          <ul>
+            <p>Valikoidut toimialat</p>
+            <li>Teollisuus ja energia</li>
+            <li>Rakentaminen</li>
+            <li>Kauppa</li>
+            <li>Kuljetus ja varastointi</li>
+            <li>Majoitus ja ravintolat</li>
+            <li>Informaatio ja viestintä</li>
+            <p>Valikoidut pilvipalvelutyypit</p>
+            <li>Pilvipalvelut käytössä <i>(tämä vain kokonaiskäytön laskemiseen)</i></li>
+            <li>Sähköposti - SaaS</li>
+            <li>Toimisto-ohjelmat - SaaS</li>
+            <li>Kirjanpito - SaaS</li>
+            <li>CRM - SaaS</li>
+            <li>Tietokannat - PaaS</li>
+            <li>Laskentateho - IaaS</li>
+            <li>Alustapalvelut - PaaS</li>
+            <li>Tietoturva - SaaS</li>
+          </ul>
+        </details>
       </section>
 
       <section>
